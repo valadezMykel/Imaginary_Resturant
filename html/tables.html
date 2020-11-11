@@ -20,6 +20,9 @@
     <div id= "tables">
 
     </div>
+    <div id="waitlist">
+
+    </div>
     <script type="text/javascript">
         $.get("/api/tables/", function(data) {
         console.log(data);
@@ -42,6 +45,29 @@
          }
         } else {
           $("tables").text("no tables");
+        }
+      });
+      $.get("/api/waitlist/", function(data) {
+        console.log(data);
+        if (data) {
+         for( var i = 0; i< data.length; i++){
+            let el  = $("<div>");
+            let h4 = $("<h1>");
+            let pp = $("<p>");
+            let pe = $("<p>");
+            let pi = $("<p>");
+            h4.text(data[i].name);
+            pp.text(data[i].phone);
+            pe.text(data[i].email);
+            pi.text(data[i].id);
+            el.append(h4);
+            el.append(pp);
+            el.append(pe);
+            el.append(pi);
+            $("#waitlist").append(el);
+         }
+        } else {
+         // $("waitlist").text("no tables");
         }
       });
     </script>
