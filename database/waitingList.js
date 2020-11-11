@@ -1,4 +1,6 @@
-const tableList = [
+const { builtinModules } = require("module");
+
+const waitList = [
     {
         customerName: "Scott Nelson",
         customerEmail: "scott@gmail.com",
@@ -6,3 +8,5 @@ const tableList = [
         customerId = "scottn123"
     }
 ];
+
+module.exports = waitList;
