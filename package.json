@@ -1,0 +1,26 @@
+{
+  "name": "imaginary_resturant",
+  "version": "1.0.0",
+  "description": "Restaurant Reservation Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valadezMykel/Imaginary_Resturant.git"
+  },
+  "keywords": [
+    "reservations"
+  ],
+  "author": "Scott Nelson, Mykel Valadez, Olga Illarionova, Paul Besliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valadezMykel/Imaginary_Resturant/issues"
+  },
+  "homepage": "https://github.com/valadezMykel/Imaginary_Resturant#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
